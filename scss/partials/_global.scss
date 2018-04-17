@@ -1,0 +1,13 @@
+body {
+  font-family: 'Istok Web', sans-serif;
+  background: $bkg-color;
+  color: $main-color;
+  font-size: 16px;
+}
+h1, h2, h3, h4 {
+  margin-top: 0;
+}
+a, a:hover, a:focus, a:visited {
+  text-decoration: none;
+  outline: none;
+}
