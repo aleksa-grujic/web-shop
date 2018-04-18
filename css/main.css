@@ -12,4 +12,26 @@ a, a:hover, a:focus, a:visited {
   text-decoration: none;
   outline: none; }
 
+a {
+  color: #666; }
+  a:hover {
+    color: #000; }
+
+.main-header .top-bar {
+  padding: 10px 0; }
+  .main-header .top-bar a {
+    font-size: 14px;
+    color: #333; }
+    .main-header .top-bar a:hover {
+      color: #000; }
+  .main-header .top-bar .phone-info {
+    float: left; }
+  .main-header .top-bar .log-in {
+    float: right;
+    text-transform: uppercase; }
+.main-header .navbar {
+  background: #fff;
+  margin-bottom: 0;
+  border: none; }
+
 /*# sourceMappingURL=main.css.map */

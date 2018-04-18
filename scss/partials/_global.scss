@@ -11,3 +11,9 @@ a, a:hover, a:focus, a:visited {
   text-decoration: none;
   outline: none;
 }
+a {
+  color: $link-color;
+  &:hover {
+    color: $link-hover;
+  }
+}
