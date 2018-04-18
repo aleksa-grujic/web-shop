@@ -16,9 +16,24 @@
       text-transform: uppercase;
     }
   }
-  .navbar {
+  .container-fluid{
     background: #fff;
+  }
+  .navbar {
     margin-bottom: 0;
     border: none;
+    @media all and (max-width: 350px){
+      justify-content: flex-start;
+      h1 {
+        order: 2;
+      }
+      .navbar-toggler{
+        order: 1;
+        .navbar-toggler-icon{
+          background-image: url(img/bars.svg);
+          color: black;
+        }
+      }
+    }
   }
 }

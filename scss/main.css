@@ -34,15 +34,5 @@ a {
 .main-header .navbar {
   margin-bottom: 0;
   border: none; }
-  @media all and (max-width: 350px) {
-    .main-header .navbar {
-      justify-content: flex-start; }
-      .main-header .navbar h1 {
-        order: 2; }
-      .main-header .navbar .navbar-toggler {
-        order: 1; }
-        .main-header .navbar .navbar-toggler .navbar-toggler-icon {
-          background-image: url(img/bars.svg);
-          color: black; } }
 
 /*# sourceMappingURL=main.css.map */

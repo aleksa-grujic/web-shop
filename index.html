@@ -13,43 +13,45 @@
       <!-- Top Bar -->
       <div class="top-bar">
         <!-- Container  -->
-        <div class="container">
+        <div class="container clearfix">
           <a href="#" class="phone-info">+381 11 555 55 555</a>
           <a href="#" class="log-in">Prijavi se</a>
         </div>
         <!-- Container END -->
       </div>
       <!-- Top Bar END -->
-      <!-- Navbar -->
       <!-- Container -->
-        <div class="container">
-          <nav class="navbar navbar-expand-sm navbar-light">
-            <h1><a href="index.html"><img src="img/logo.png" alt="logo shop"></a></h1>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navigation">
-              <ul class="nav navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">Naslovna</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Prodavnica</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">O nama</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
-              </ul>
+        <div class="container-fluid">
+          <div class="container">
+            <!-- Navbar -->
+            <nav class="navbar navbar-expand-sm">
+              <h1><a href="index.html"><img src="img/logo.png" alt="logo shop"></a></h1>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-end" id="navigation">
+                <ul class="nav navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="#">Naslovna</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Prodavnica</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">O nama</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Kontakt</a></li>
+                </ul>
+              </div>
+            </nav>
+            <!-- Navbar END -->
+            <!-- Search Cart Holder -->
+            <div>
+              <div>
+                <input type="text" name="search" class="form-control">
+                <button type="button" class="btn">Trazi</button>
+              </div>
+              <a href="#"><img src="img/cart-icon.png" alt="Korpa"></a>
+              <span>2</span>
             </div>
-          </nav>
-      <!-- Navbar END -->
-      <!-- Search Cart Holder -->
-        <div>
-          <div>
-            <input type="text" name="search" class="form-control">
-            <button type="button" class="btn">Trazi</button>
+            <!-- Search Cart Holder END -->
           </div>
-          <a href="#"><img src="img/cart-icon.png" alt="Korpa"></a>
-          <span>2</span>
         </div>
-      <!-- Search Cart Holder END -->
-      </div>
       <!-- Container END -->
     </header>
     <!-- Main Header END -->
@@ -57,7 +59,7 @@
     <main>
       <!-- Intro Header -->
       <header>
-        <img src="img/background-intro.jpg" alt="Background intro">
+        <img class="img-fluid" src="img/background-intro.jpg" alt="Background intro">
       <!-- Slider -->
         <div id="intro-slider" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
@@ -100,11 +102,11 @@
             <!-- Collections Holder -->
             <div>
               <a href="#">
-                <img src="img/female-products.jpg" alt="Female products">
+                <img class="img-fluid" src="img/female-products.jpg" alt="Female products">
                 <span>Zenska kolekcija</span>
               </a>
               <a href="#">
-                <img src="img/male-products.jpg" alt="Male products">
+                <img class="img-fluid" src="img/male-products.jpg" alt="Male products">
                 <span>Muska kolekcija</span>
               </a>
             </div>
