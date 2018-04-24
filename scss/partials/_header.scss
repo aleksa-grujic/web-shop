@@ -1,6 +1,6 @@
 .main-header {
   .top-bar {
-    padding: 10px 0;
+    padding: 10px 15px;
     a {
       font-size: 14px;
       color: $main-color;
@@ -19,19 +19,151 @@
   .container-fluid{
     background: #fff;
   }
+  .container {
+    position: relative;
+    padding: 0;
+  }
   .navbar {
-    margin-bottom: 0;
+    margin-bottom: -10px;
+    padding-top: 10px;
     border: none;
-    @media all and (max-width: 350px){
+    .navbar-collapse {
+      padding-bottom: 10px;
+    }
+    @media all and (max-width: 767px){
       justify-content: flex-start;
-      h1 {
-        order: 2;
+      padding-left: 0;
+      padding-right: 0;
+      .logo {
+        margin-bottom: 3px;
+        img {
+          height: 16px;
+          margin-bottom: 8px;
+        }
       }
-      .navbar-toggler{
-        order: 1;
-        .navbar-toggler-icon{
-          background-image: url(img/bars.svg);
-          color: black;
+      button {
+        border: none;
+        padding: 0;
+        padding-right: 15px;
+      }
+      .navbar-toggler {
+        &:focus {
+          outline: none;
+        }
+        img {
+          height: 16px;
+        }
+      }
+    }
+  }
+  .search-cart-holder {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    top: 13px;
+    .search, .cart {
+      display: inline-block;
+    }
+    .search {
+      position: relative;
+      margin-right: 10px;
+      @media all and (max-width: 340px) {
+        .form-control{
+          width: calc(140px - 2em)!important;
+        }
+      }
+      @media all and (min-width: 440px) {
+        .form-control{
+          width: 250px!important;
+        }
+      }
+      .form-control {
+        display: block;
+        width: 140px;
+        height: 24px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        @include radius(0px);
+        box-shadow: none;
+        padding-right: 20px;
+        padding-top: 3px;
+        padding-left: 2px;
+        &:focus {
+          border-bottom-color: $link-hover;
+        }
+      }
+      .btn {
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        background-image: url("../img/search-icon.png");
+        background-repeat: no-repeat;
+        display: block;
+        width: 17px;
+        height: 18px;
+        border: none;
+        background-color: transparent;
+        &:focus, &:active {
+          box-shadow: none;
+          }
+        }
+      }
+      .cart {
+        position: relative;
+        .badge {
+          position: absolute;
+          padding: 4px 6px 3px;
+          background-color: #cc0000;
+          @include radius(50%);
+          bottom: -8px;
+          right: -8px;
+        }
+      }
+    }
+
+    .nav {
+      li {
+        text-align: center;
+        a {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 5px;
+          border-bottom: 2px solid transparent;
+          text-transform: uppercase;
+          display: inline-block;
+          &:hover, &:focus {
+            background-color: transparent;
+            border-bottom-color: $nav-active;
+          }
+        }
+      }
+      .active {
+        a {
+        border-bottom: 2px solid $nav-active;
+        }
+      }
+    }
+  }
+@media (min-width:768px){
+  .main-header {
+    .top-bar {
+      a {
+        font-size: 16px;
+      }
+    }
+    .logo {
+      img {
+        width: 80px;
+      }
+    }
+    nav {
+      li {
+        &:not(:last-child) {
+          margin-right: 30px;
+        }
+        a.nav-link {
+          padding-left: 0;
+          padding-right: 0;
         }
       }
     }

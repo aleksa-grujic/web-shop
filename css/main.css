@@ -18,7 +18,7 @@ a {
     color: #000; }
 
 .main-header .top-bar {
-  padding: 10px 0; }
+  padding: 10px 15px; }
   .main-header .top-bar a {
     font-size: 14px;
     color: #333; }
@@ -31,18 +31,112 @@ a {
     text-transform: uppercase; }
 .main-header .container-fluid {
   background: #fff; }
+.main-header .container {
+  position: relative;
+  padding: 0; }
 .main-header .navbar {
-  margin-bottom: 0;
+  margin-bottom: -10px;
+  padding-top: 10px;
   border: none; }
-  @media all and (max-width: 350px) {
+  .main-header .navbar .navbar-collapse {
+    padding-bottom: 10px; }
+  @media all and (max-width: 767px) {
     .main-header .navbar {
-      justify-content: flex-start; }
-      .main-header .navbar h1 {
-        order: 2; }
-      .main-header .navbar .navbar-toggler {
-        order: 1; }
-        .main-header .navbar .navbar-toggler .navbar-toggler-icon {
-          background-image: url(img/bars.svg);
-          color: black; } }
+      justify-content: flex-start;
+      padding-left: 0;
+      padding-right: 0; }
+      .main-header .navbar .logo {
+        margin-bottom: 3px; }
+        .main-header .navbar .logo img {
+          height: 16px;
+          margin-bottom: 8px; }
+      .main-header .navbar button {
+        border: none;
+        padding: 0;
+        padding-right: 15px; }
+      .main-header .navbar .navbar-toggler:focus {
+        outline: none; }
+      .main-header .navbar .navbar-toggler img {
+        height: 16px; } }
+.main-header .search-cart-holder {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  top: 13px; }
+  .main-header .search-cart-holder .search, .main-header .search-cart-holder .cart {
+    display: inline-block; }
+  .main-header .search-cart-holder .search {
+    position: relative;
+    margin-right: 10px; }
+    @media all and (max-width: 340px) {
+      .main-header .search-cart-holder .search .form-control {
+        width: calc(140px - 2em) !important; } }
+    @media all and (min-width: 440px) {
+      .main-header .search-cart-holder .search .form-control {
+        width: 250px !important; } }
+    .main-header .search-cart-holder .search .form-control {
+      display: block;
+      width: 140px;
+      height: 24px;
+      border: none;
+      border-bottom: 1px solid #ccc;
+      -webkit-border-radius: 0px;
+      -moz-border-radius: 0px;
+      border-radius: 0px;
+      box-shadow: none;
+      padding-right: 20px;
+      padding-top: 3px;
+      padding-left: 2px; }
+      .main-header .search-cart-holder .search .form-control:focus {
+        border-bottom-color: #000; }
+    .main-header .search-cart-holder .search .btn {
+      position: absolute;
+      top: 2px;
+      right: 2px;
+      background-image: url("../img/search-icon.png");
+      background-repeat: no-repeat;
+      display: block;
+      width: 17px;
+      height: 18px;
+      border: none;
+      background-color: transparent; }
+      .main-header .search-cart-holder .search .btn:focus, .main-header .search-cart-holder .search .btn:active {
+        box-shadow: none; }
+  .main-header .search-cart-holder .cart {
+    position: relative; }
+    .main-header .search-cart-holder .cart .badge {
+      position: absolute;
+      padding: 4px 6px 3px;
+      background-color: #cc0000;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      border-radius: 50%;
+      bottom: -8px;
+      right: -8px; }
+.main-header .nav li {
+  text-align: center; }
+  .main-header .nav li a {
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5px;
+    border-bottom: 2px solid transparent;
+    text-transform: uppercase;
+    display: inline-block; }
+    .main-header .nav li a:hover, .main-header .nav li a:focus {
+      background-color: transparent;
+      border-bottom-color: #ACDACF; }
+.main-header .nav .active a {
+  border-bottom: 2px solid #ACDACF; }
+
+@media (min-width: 768px) {
+  .main-header .top-bar a {
+    font-size: 16px; }
+  .main-header .logo img {
+    width: 80px; }
+  .main-header nav li:not(:last-child) {
+    margin-right: 30px; }
+  .main-header nav li a.nav-link {
+    padding-left: 0;
+    padding-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */
