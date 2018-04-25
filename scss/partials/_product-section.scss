@@ -1,0 +1,49 @@
+.product-section {
+  .product-title {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 20px;
+    &::after {
+      content: " ";
+      width: 95px;
+      height: 5px;
+      display: block;
+      background-image: url("../img/decoration-line.png");
+      margin: 30px auto 0;
+    }
+  }
+  p {
+    font-size: 16px;
+    text-align: center;
+    color: #999;
+    margin-bottom: 15px;
+  }
+  .collections-holder {
+    a {
+      font-size: 26px;
+      text-transform: uppercase;
+      color: #fff;
+      display: block;
+      margin-bottom: 15px;
+      img {
+        opacity: .8;
+      }
+      span {
+        position: absolute;
+        top:50%;
+        transform: translateY(-50%);
+        width: 100%;
+        text-align: center;
+      }
+    }
+    .frame {
+      &::before, &::after {
+        width: 70px;
+        height: 40px;
+        border-width: 2px;
+      }
+    }
+  }
+}
