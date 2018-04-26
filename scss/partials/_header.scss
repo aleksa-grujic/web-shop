@@ -120,27 +120,26 @@
         }
       }
     }
-
-    .nav {
-      li {
-        text-align: center;
-        a {
-          padding-left: 0;
-          padding-right: 0;
-          padding-bottom: 5px;
-          border-bottom: 2px solid transparent;
-          text-transform: uppercase;
-          display: inline-block;
-          &:hover, &:focus {
-            background-color: transparent;
-            border-bottom-color: $nav-active;
-          }
+  }
+  .nav {
+    li {
+      text-align: center;
+      a {
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 5px;
+        border-bottom: 2px solid transparent;
+        text-transform: uppercase;
+        display: inline-block;
+        &:hover, &:focus {
+          background-color: transparent;
+          border-bottom-color: $nav-active;
         }
       }
-      .active {
-        a {
-        border-bottom: 2px solid $nav-active;
-        }
+    }
+    .active {
+      a {
+      border-bottom: 2px solid $nav-active;
       }
     }
   }
